@@ -2,20 +2,26 @@
 
 A new Flutter project.
 
-<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/c5ce9eba-4566-4539-a2b3-51fb0975d7fe" width="220px">
-<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/b5d30e31-6899-4ed3-a5eb-44572b96a9ca"width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/f4cdb1f9-a9d4-4d11-9cdc-18e49884b9f4" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/91cb0d12-c542-4698-8cf1-e1d564325101" width="220px">
+<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/e62f6b21-e970-4c93-9945-062acd280d16" width="220px">
 
-<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/98c4cedb-4333-46ed-90ad-e3257cbaf685" width="220px">
-<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/d8fa150a-f355-4a10-8c02-23f43ed603e0" width="220px">
-<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/481ad619-ae4d-47a4-9963-9807f67b0881" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/b351af0e-1c0d-457e-8532-15258085ba1b" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/e7332f6f-c4fe-473b-9052-dc00cdf46a8a" width="220px">
+<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/767a2ec8-50f7-495e-ae4e-055f7c05b997" width="220px">
 
-<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/11cb19ce-15e4-4a37-acc9-4a30448cde7e" width="220px">
-<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/332c0ca0-ea6d-42ae-9813-3af2cf489cde" width="220px">
-<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/29e426f1-1a5d-4128-8976-c8df0ccba349" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/af019b95-dd97-4f6a-bdab-545edf8dd127" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/d675921c-f69f-470f-93fe-7871d8c8fcaa" width="220px">
+<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/00d3574e-abe6-40f9-83d8-28ebef524150" width="220px">
 
-<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/c1c77489-6e58-4e8b-8ce9-6ce1f7374a49" width="220px">
-<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/a8381791-8b72-4710-96b0-f97103fcabf1"width="220px">
-<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/98bc22bd-3216-496d-bd54-c984c95da075" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/6456dcda-17d1-4257-8ac1-81596d200e51" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/be4af6c3-b4d2-4148-a2db-34603fc3f84a" width="220px">
+<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/8e8f08e6-1366-4bc1-a467-abd2a8958998" width="220px">
+
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/5e8f7fd6-0510-40d9-bac6-583c9f25b8eb" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/754f9287-c3ac-417d-b65d-65392c401e3a" width="220px">
+<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/ab59cb52-5951-4c73-920d-5bb89991e60f" width="220px">
+
 
 ## Getting Started
 
