@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:galaxy_planets/controller/provider/themeprovider.dart';
 import 'package:provider/provider.dart';
 
 import '../../controller/provider/planet.dart';
@@ -25,6 +24,11 @@ class _Details_screenState extends State<Details_screen>
       duration: const Duration(seconds: 5),
     )..repeat();
   }
+  @override
+  void dispose() {
+    super.dispose();
+    animationController.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,22 +37,7 @@ class _Details_screenState extends State<Details_screen>
     double _width = size.width;
     dynamic data = ModalRoute.of(context)!.settings.arguments;
     return Scaffold(
-      appBar: AppBar(
-        actions: [
-          IconButton(
-            onPressed: () {
-              Provider.of<ThemeProvider>(context,
-                  listen: false)
-                  .ChangeTheme();
-            },
-            icon: Provider.of<ThemeProvider>(context)
-                .themeModel
-                .isDark
-                ? const Icon(Icons.light_mode_outlined)
-                : const Icon(Icons.dark_mode_rounded),
-          ),
-        ],
-      ),
+      appBar: AppBar(),
       body: Container(
         width: _width * 1,
         height: _height * 1,
@@ -77,6 +66,7 @@ class _Details_screenState extends State<Details_screen>
                               Provider.of<PlanetProvider>(context)
                                   .Planet[data]
                                   .image,
+                              scale: 2,
                             ),
                           );
                         },
@@ -87,20 +77,12 @@ class _Details_screenState extends State<Details_screen>
                 SizedBox(
                   height: _height * 0.04,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Text(
-                      Provider.of<PlanetProvider>(context).Planet[data].name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 35,
-                      ),
-                    ),
-                    SizedBox(width: 150),
-                    IconButton(onPressed: (){animationController.reverse();}, icon: Icon(Icons.rotate_left,),),
-                    IconButton(onPressed: (){animationController.repeat();}, icon: Icon(Icons.refresh,),),
-                  ],
+                Text(
+                  Provider.of<PlanetProvider>(context).Planet[data].name,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 35,
+                  ),
                 ),
                 SizedBox(
                   height: _height * 0.01,

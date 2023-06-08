@@ -1,4 +1,5 @@
 class PlanetModel {
+  int id;
   String name;
   String name1;
   String image;
@@ -8,8 +9,9 @@ class PlanetModel {
   String gallery3;
   String gallery4;
   String gallery5;
-
+bool? favourite;
   PlanetModel({
+    required this.id,
     required this.name,
     required this.name1,
     required this.image,
@@ -19,11 +21,13 @@ class PlanetModel {
     required this.gallery3,
     required this.gallery4,
     required this.gallery5,
+    required this.favourite,
 
   });
 
   factory PlanetModel.fromMap({required Map data}) {
     return PlanetModel(
+      id: data['id'],
       name: data['name'],
       name1: data['name1'],
       image: data['image'],
@@ -33,6 +37,7 @@ class PlanetModel {
       gallery3: data['Gallery3'],
       gallery4: data['Gallery4'],
       gallery5: data['Gallery5'],
+      favourite: data['favourite'],
     );
   }
 }

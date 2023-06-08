@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../modals/planetmodel.dart';
 
@@ -17,4 +18,38 @@ class PlanetProvider extends ChangeNotifier{
 
   }
 
+
+
+  falseToTrue({required int i}) async {
+    Planet[i].favourite = true;
+  }
+
+  trueToFalse({required int i}) async {
+    Planet[i].favourite = false;
+  }
+
+}
+
+class Favourite_Provider extends ChangeNotifier {
+  List<PlanetModel> favourite = [];
+
+
+  addToFavourite({required PlanetModel added}) async {
+    favourite.add(added);
+
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+
+    await preferences.setStringList('favourite', favourite.cast<String>());
+
+    notifyListeners();
+  }
+
+  void removeFromFavourite({required PlanetModel removed}) async {
+    favourite.removeWhere((planet) => planet == removed.id);
+
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+    await preferences.setStringList('favourite', favourite.cast<String>());
+
+    notifyListeners();
+  }
 }
