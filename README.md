@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/c5ce9eba-4566-4539-a2b3-51fb0975d7fe" width="220px">
+<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/b5d30e31-6899-4ed3-a5eb-44572b96a9ca"width="220px">
+
 <img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/98c4cedb-4333-46ed-90ad-e3257cbaf685" width="220px">
 <img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/d8fa150a-f355-4a10-8c02-23f43ed603e0" width="220px">
 <img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/481ad619-ae4d-47a4-9963-9807f67b0881" width="220px">
