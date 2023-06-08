@@ -66,7 +66,6 @@ class _Details_screenState extends State<Details_screen>
                               Provider.of<PlanetProvider>(context)
                                   .Planet[data]
                                   .image,
-                              scale: 2,
                             ),
                           );
                         },
@@ -77,12 +76,19 @@ class _Details_screenState extends State<Details_screen>
                 SizedBox(
                   height: _height * 0.04,
                 ),
-                Text(
-                  Provider.of<PlanetProvider>(context).Planet[data].name,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 35,
-                  ),
+                Row(
+                  children: [
+                    Text(
+                      Provider.of<PlanetProvider>(context).Planet[data].name,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 35,
+                      ),
+                    ),
+                    SizedBox(width: 150),
+                    IconButton(onPressed: (){animationController.reverse();}, icon: Icon(Icons.rotate_90_degrees_ccw_outlined)),
+                    IconButton(onPressed: (){animationController.repeat();}, icon: Icon(Icons.rotate_90_degrees_cw_outlined)),
+                  ],
                 ),
                 SizedBox(
                   height: _height * 0.01,

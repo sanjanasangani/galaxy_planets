@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Jupiter",
-    "name1": "JUPITER",
+    "name1": "fifth planet",
     "image": "assets/images/jupiter.png",
     "Gallery1": "assets/jupiter/1.jpeg",
     "Gallery2": "assets/jupiter/2.jpeg",
@@ -15,7 +15,7 @@
   {
     "id": 1,
     "name": "Earth",
-    "name1": "EARTH",
+    "name1": "Third planet",
     "image": "assets/images/earth.png",
     "Gallery1": "assets/earth/1.jpeg",
     "Gallery2": "assets/earth/2.jpeg",
@@ -28,7 +28,7 @@
   {
     "id": 2,
     "name": "Mercury",
-    "name1": "MERCURY",
+    "name1": "First planet",
     "image": "assets/images/mercury.png",
     "Gallery1": "assets/mercury/1.jpeg",
     "Gallery2": "assets/mercury/2.jpeg",
@@ -41,7 +41,7 @@
   {
     "id": 3,
     "name": "Mars",
-    "name1": "MARS",
+    "name1": "Fourth planet",
     "image": "assets/images/mars.png",
     "Gallery1": "assets/mars/1.jpeg",
     "Gallery2": "assets/mars/2.jpeg",
@@ -54,7 +54,7 @@
   {
     "id": 4,
     "name": "Venus",
-    "name1": "VENUS",
+    "name1": "Second planet",
     "image": "assets/images/venus.png",
     "Gallery1": "assets/venus/1.jpeg",
     "Gallery2": "assets/venus/2.jpeg",
@@ -67,7 +67,7 @@
   {
     "id": 5,
     "name": "Saturn",
-    "name1": "SATURN",
+    "name1": "Sixth planet",
     "image": "assets/images/saturn.png",
     "Gallery1": "assets/saturn/1.jpeg",
     "Gallery2": "assets/saturn/2.jpeg",
@@ -80,7 +80,7 @@
   {
     "id": 6,
     "name": "Uranus",
-    "name1": "URANUS",
+    "name1": "Seventh planet",
     "image": "assets/images/uranus.png",
     "Gallery1": "assets/uranus/1.jpeg",
     "Gallery2": "assets/uranus/2.jpeg",
@@ -93,7 +93,7 @@
   {
     "id": 7,
     "name": "Neptune",
-    "name1": "Neptune",
+    "name1": "Eighth planet",
     "image": "assets/images/neptune.png",
     "Gallery1": "assets/neptune/1.jpeg",
     "Gallery2": "assets/neptune/2.jpeg",
