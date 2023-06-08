@@ -7,7 +7,7 @@ A new Flutter project.
 <img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/e62f6b21-e970-4c93-9945-062acd280d16" width="220px">
 
 <img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/6f069359-832a-49b6-b9f8-2e47a64139b9" width="220px">
-<img align="left" src="![Screenshot_20230608_114930](https://github.com/sanjanasangani/galaxy_planets/assets/131368083/d2112500-ca59-49dd-91af-20f3cdf9f7e3" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/d2112500-ca59-49dd-91af-20f3cdf9f7e3" width="220px">
 <img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/f2edb10a-909e-46bb-860e-410720a39c5f" width="220px">
 
 <img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/d7748022-7319-4e92-99b6-124d97a03b30" width="220px">
