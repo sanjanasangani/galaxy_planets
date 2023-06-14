@@ -6,9 +6,9 @@ A new Flutter project.
 <img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/91cb0d12-c542-4698-8cf1-e1d564325101" width="220px">
 <img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/e62f6b21-e970-4c93-9945-062acd280d16" width="220px">
 
-<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/b351af0e-1c0d-457e-8532-15258085ba1b" width="220px">
-<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/e7332f6f-c4fe-473b-9052-dc00cdf46a8a" width="220px">
-<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/767a2ec8-50f7-495e-ae4e-055f7c05b997" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/774134cf-8128-4d1d-8fff-0ef440f5111f" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/e2fd0ca8-74db-4c06-bece-746255682023" width="220px">
+<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/0b9340ba-d821-4ec3-985c-f1511c988aa8" width="220px">
 
 <img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/af019b95-dd97-4f6a-bdab-545edf8dd127" width="220px">
 <img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/d675921c-f69f-470f-93fe-7871d8c8fcaa" width="220px">
