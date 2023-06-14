@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 
 import '../controller/provider/planet.dart';
 import '../controller/provider/themeprovider.dart';
+import '../modals/planetmodel.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -16,7 +17,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   String? data;
   int i = 0;
   double rotationAngle = 0.0;
@@ -71,10 +71,11 @@ class _HomeState extends State<Home> {
         body: SingleChildScrollView(
           child: Container(
             height: _height * 1,
-            color: Provider.of<ThemeProvider>(context,
-                listen: true).changethemeModel.isDark
-                ?Colors.white
-                :Color(0xff191932),
+            color: Provider.of<ThemeProvider>(context, listen: true)
+                    .changethemeModel
+                    .isDark
+                ? Colors.white
+                : Color(0xff191932),
             child: Padding(
               padding: const EdgeInsets.all(14),
               child: Column(
@@ -97,12 +98,12 @@ class _HomeState extends State<Home> {
                             IconButton(
                               onPressed: () {
                                 Provider.of<ThemeProvider>(context,
-                                    listen: false)
+                                        listen: false)
                                     .chnageTheme();
                               },
                               icon: Provider.of<ThemeProvider>(context)
-                                  .changethemeModel
-                                  .isDark
+                                      .changethemeModel
+                                      .isDark
                                   ? const Icon(Icons.light_mode_outlined)
                                   : const Icon(Icons.dark_mode_rounded),
                             ),
@@ -120,9 +121,7 @@ class _HomeState extends State<Home> {
                             fillColor: Colors.grey.withOpacity(0.6),
                             hintText: "Search for your Favorite planets",
                             hintStyle: const TextStyle(color: Colors.grey),
-                            labelStyle: const TextStyle(
-
-                            ),
+                            labelStyle: const TextStyle(),
                             prefixIcon: const Icon(
                               Icons.search,
                               color: Colors.grey,
@@ -136,7 +135,9 @@ class _HomeState extends State<Home> {
                           children: [
                             Text(
                               "Most popular",
-                              style: TextStyle(fontSize: _height * 0.025,fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontSize: _height * 0.025,
+                                  fontWeight: FontWeight.bold),
                             ),
                             SizedBox(
                               width: _height * 0.02,
@@ -152,9 +153,9 @@ class _HomeState extends State<Home> {
                     child: GridView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount:
-                      Provider.of<PlanetProvider>(context).Planet.length,
+                          Provider.of<PlanetProvider>(context).Planet.length,
                       gridDelegate:
-                      const SliverGridDelegateWithFixedCrossAxisCount(
+                          const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 1,
                         mainAxisSpacing: 15,
                         mainAxisExtent: 180,
@@ -168,7 +169,7 @@ class _HomeState extends State<Home> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: containerColors[
-                              index % containerColors.length],
+                                  index % containerColors.length],
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: Column(
@@ -207,7 +208,7 @@ class _HomeState extends State<Home> {
                                     ),
                                     child: Row(
                                       mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text(
                                           Provider.of<PlanetProvider>(context)
@@ -218,9 +219,6 @@ class _HomeState extends State<Home> {
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                        IconButton(onPressed: () {
-
-                                        }, icon: Icon(CupertinoIcons.heart),),
                                       ],
                                     ),
                                   ),
@@ -236,7 +234,7 @@ class _HomeState extends State<Home> {
                                     ),
                                     child: Row(
                                       mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text(
                                           Provider.of<PlanetProvider>(context)
@@ -247,7 +245,6 @@ class _HomeState extends State<Home> {
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
-
                                       ],
                                     ),
                                   ),
@@ -289,14 +286,13 @@ class _HomeState extends State<Home> {
                       child: GridView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount:
-                        Provider.of<PlanetProvider>(context).Planet.length,
+                            Provider.of<PlanetProvider>(context).Planet.length,
                         gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 1,
-                            mainAxisSpacing: 15,
-                            mainAxisExtent: 150,
-                            crossAxisSpacing: 30
-                        ),
+                            const SliverGridDelegateWithFixedCrossAxisCount(
+                                crossAxisCount: 1,
+                                mainAxisSpacing: 15,
+                                mainAxisExtent: 150,
+                                crossAxisSpacing: 30),
                         itemBuilder: (BuildContext context, int index) {
                           return GestureDetector(
                             onTap: () {
@@ -306,7 +302,7 @@ class _HomeState extends State<Home> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: containerColors[
-                                index % containerColors.length],
+                                    index % containerColors.length],
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Column(
@@ -319,14 +315,12 @@ class _HomeState extends State<Home> {
                                   Expanded(
                                     flex: 3,
                                     child: TweenAnimationBuilder(
-                                      duration:
-                                      const Duration(seconds: 2),
-                                      tween: Tween<double>(
-                                          begin: 0, end: 2 * pi),
+                                      duration: const Duration(seconds: 2),
+                                      tween:
+                                          Tween<double>(begin: 0, end: 2 * pi),
                                       child: Center(
                                         child: Image.asset(
-                                          Provider.of<PlanetProvider>(
-                                              context)
+                                          Provider.of<PlanetProvider>(context)
                                               .Planet[index]
                                               .image,
                                           scale: 2,
@@ -349,11 +343,10 @@ class _HomeState extends State<Home> {
                                       ),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
-                                            Provider.of<PlanetProvider>(
-                                                context)
+                                            Provider.of<PlanetProvider>(context)
                                                 .Planet[index]
                                                 .name,
                                             style: const TextStyle(
@@ -361,9 +354,50 @@ class _HomeState extends State<Home> {
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
-                                          IconButton(onPressed: () {
-
-                                          }, icon: Icon(CupertinoIcons.heart),),
+                                          IconButton(
+                                            onPressed: () {
+                                              PlanetModel planet =
+                                                  Provider.of<PlanetProvider>(
+                                                          context,
+                                                          listen: false)
+                                                      .Planet[index];
+                                              if (Provider.of<
+                                                          Favourite_Provider>(
+                                                      context,
+                                                      listen: false)
+                                                  .favourite
+                                                  .contains(planet)) {
+                                                (Provider.of<
+                                                            Favourite_Provider>(
+                                                        context,
+                                                        listen: false)
+                                                    .removeToFavourite(
+                                                        added: planet));
+                                              } else {
+                                                (Provider.of<
+                                                            Favourite_Provider>(
+                                                        context,
+                                                        listen: false)
+                                                    .addToFavourite(
+                                                        added: planet));
+                                              }
+                                            },
+                                            icon: Consumer<PlanetProvider>(
+                                              builder:
+                                                  (context, planetProvider, _) {
+                                                bool isFavorite =
+                                                    planetProvider.Planet
+                                                        .contains(planetProvider
+                                                            .Planet[index]);
+                                                return (isFavorite == false)
+                                                    ? Icon(Icons.favorite,
+                                                        color: Colors.red)
+                                                    : Icon(
+                                                        Icons.favorite_border,
+                                                        color: Colors.white);
+                                              },
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),

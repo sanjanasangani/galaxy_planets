@@ -4,8 +4,10 @@ import 'package:galaxy_planets/views/screens/details_screen.dart';
 import 'package:galaxy_planets/views/screens/first_screen.dart';
 import 'package:galaxy_planets/views/screens/MainPage.dart';
 import 'package:galaxy_planets/views/screens/splash_screen.dart';
+
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 import 'components/fvtpage.dart';
 import 'components/setting_page.dart';
 import 'controller/provider/planet.dart';
@@ -21,7 +23,8 @@ void main()async {
       providers: [
         ChangeNotifierProvider(create: (context) => PlanetProvider()),
         ChangeNotifierProvider(create: (context) => Favourite_Provider()),
-        ChangeNotifierProvider(create: (context) => ThemeProvider(changethemeModel: ThemeModel(isDark: isDarkTheme))),
+        ChangeNotifierProvider(create: (context) =>
+            ThemeProvider(changethemeModel: ThemeModel(isDark: isDarkTheme))),
       ],
       builder: (context, _) {
         return MaterialApp(
@@ -32,6 +35,7 @@ void main()async {
               ? ThemeMode.light
               : ThemeMode.dark,
           debugShowCheckedModeBanner: false,
+          initialRoute: 'homepage',
           routes: {
             '/': (context) => SplashScreen(),
             'detail1':(context)=>detail1(),

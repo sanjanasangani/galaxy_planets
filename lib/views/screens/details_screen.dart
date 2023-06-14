@@ -24,6 +24,7 @@ class _Details_screenState extends State<Details_screen>
       duration: const Duration(seconds: 5),
     )..repeat();
   }
+
   @override
   void dispose() {
     super.dispose();
@@ -56,7 +57,7 @@ class _Details_screenState extends State<Details_screen>
                   children: [
                     Container(
                       height: _height * 0.3,
-                      width:  _width * 0.8,
+                      width: _width * 0.8,
                       child: AnimatedBuilder(
                         animation: animationController,
                         builder: (context, child) {
@@ -85,9 +86,17 @@ class _Details_screenState extends State<Details_screen>
                         fontSize: 35,
                       ),
                     ),
-                    SizedBox(width: 150),
-                    IconButton(onPressed: (){animationController.reverse();}, icon: Icon(Icons.rotate_90_degrees_ccw_outlined)),
-                    IconButton(onPressed: (){animationController.repeat();}, icon: Icon(Icons.rotate_90_degrees_cw_outlined)),
+                    SizedBox(width: 140),
+                    IconButton(
+                        onPressed: () {
+                          animationController.reverse();
+                        },
+                        icon: Icon(Icons.rotate_90_degrees_ccw_outlined)),
+                    IconButton(
+                        onPressed: () {
+                          animationController.repeat();
+                        },
+                        icon: Icon(Icons.rotate_90_degrees_cw_outlined))
                   ],
                 ),
                 SizedBox(
@@ -106,7 +115,9 @@ class _Details_screenState extends State<Details_screen>
                 SizedBox(
                   height: _height * 0.01,
                 ),
-                Text("Infromation",style:  TextStyle(fontWeight: FontWeight.bold,fontSize: 22)),
+                Text("Infromation",
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
                 SizedBox(
                   height: _height * 0.01,
                 ),
@@ -115,7 +126,10 @@ class _Details_screenState extends State<Details_screen>
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      Provider.of<PlanetProvider>(context).Planet[data].Exploration.toString(),
+                      Provider.of<PlanetProvider>(context)
+                          .Planet[data]
+                          .Exploration
+                          .toString(),
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -125,15 +139,16 @@ class _Details_screenState extends State<Details_screen>
                 SizedBox(
                   height: _height * 0.02,
                 ),
-                Text("Gallery",style:  TextStyle(fontWeight: FontWeight.bold,fontSize: 22)),
+                Text("Gallery",
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
                 SizedBox(
                   height: _height * 0.02,
                 ),
                 Column(
                   children: [
                     Row(
-                      crossAxisAlignment:
-                      CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(
                           width: _height * 0.02,
@@ -144,18 +159,14 @@ class _Details_screenState extends State<Details_screen>
                               height: _height * 0.12,
                               width: _width * 0.4,
                               decoration: BoxDecoration(
-                                color: Colors.white
-                                    .withOpacity(0.1),
+                                color: Colors.white.withOpacity(0.1),
                                 border: Border.all(
                                   width: _width * 0.004,
                                 ),
-                                borderRadius:
-                                BorderRadius.circular(
-                                    20),
+                                borderRadius: BorderRadius.circular(20),
                                 image: DecorationImage(
                                   image: AssetImage(
-                                    Provider.of<PlanetProvider>(
-                                        context)
+                                    Provider.of<PlanetProvider>(context)
                                         .Planet[data]
                                         .gallery1,
                                   ),
@@ -170,19 +181,16 @@ class _Details_screenState extends State<Details_screen>
                               height: _height * 0.12,
                               width: _width * 0.4,
                               decoration: BoxDecoration(
-                                color: Colors.white
-                                    .withOpacity(0.1),
+                                color: Colors.white.withOpacity(0.1),
                                 border: Border.all(
                                   width: _width * 0.004,
                                 ),
-                                borderRadius:
-                                BorderRadius.circular(
+                                borderRadius: BorderRadius.circular(
                                   20,
                                 ),
                                 image: DecorationImage(
                                   image: AssetImage(
-                                    Provider.of<PlanetProvider>(
-                                        context)
+                                    Provider.of<PlanetProvider>(context)
                                         .Planet[data]
                                         .gallery2,
                                   ),
@@ -197,19 +205,16 @@ class _Details_screenState extends State<Details_screen>
                               height: _height * 0.12,
                               width: _width * 0.4,
                               decoration: BoxDecoration(
-                                color: Colors.white
-                                    .withOpacity(0.1),
+                                color: Colors.white.withOpacity(0.1),
                                 border: Border.all(
                                   width: _width * 0.004,
                                 ),
-                                borderRadius:
-                                BorderRadius.circular(
+                                borderRadius: BorderRadius.circular(
                                   20,
                                 ),
                                 image: DecorationImage(
                                   image: AssetImage(
-                                    Provider.of<PlanetProvider>(
-                                        context)
+                                    Provider.of<PlanetProvider>(context)
                                         .Planet[data]
                                         .gallery3,
                                   ),
@@ -228,19 +233,16 @@ class _Details_screenState extends State<Details_screen>
                               height: _height * 0.2,
                               width: _width * 0.4,
                               decoration: BoxDecoration(
-                                color: Colors.white
-                                    .withOpacity(0.1),
+                                color: Colors.white.withOpacity(0.1),
                                 border: Border.all(
                                   width: _width * 0.004,
                                 ),
-                                borderRadius:
-                                BorderRadius.circular(
+                                borderRadius: BorderRadius.circular(
                                   20,
                                 ),
                                 image: DecorationImage(
                                   image: AssetImage(
-                                    Provider.of<PlanetProvider>(
-                                        context)
+                                    Provider.of<PlanetProvider>(context)
                                         .Planet[data]
                                         .gallery4,
                                   ),
@@ -255,19 +257,16 @@ class _Details_screenState extends State<Details_screen>
                               height: _height * 0.2,
                               width: _width * 0.4,
                               decoration: BoxDecoration(
-                                color: Colors.white
-                                    .withOpacity(0.1),
+                                color: Colors.white.withOpacity(0.1),
                                 border: Border.all(
                                   width: _width * 0.004,
                                 ),
-                                borderRadius:
-                                BorderRadius.circular(
+                                borderRadius: BorderRadius.circular(
                                   20,
                                 ),
                                 image: DecorationImage(
                                   image: AssetImage(
-                                    Provider.of<PlanetProvider>(
-                                        context)
+                                    Provider.of<PlanetProvider>(context)
                                         .Planet[data]
                                         .gallery5,
                                   ),

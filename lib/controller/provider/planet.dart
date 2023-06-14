@@ -30,26 +30,18 @@ class PlanetProvider extends ChangeNotifier{
 
 }
 
-class Favourite_Provider extends ChangeNotifier {
-  List<PlanetModel> favourite = [];
+// }
 
+class Favourite_Provider with ChangeNotifier {
+  List<PlanetModel> favourite = [];
 
   addToFavourite({required PlanetModel added}) async {
     favourite.add(added);
-
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-
-    await preferences.setStringList('favourite', favourite.cast<String>());
-
     notifyListeners();
   }
 
-  void removeFromFavourite({required PlanetModel removed}) async {
-    favourite.removeWhere((planet) => planet == removed.id);
-
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-    await preferences.setStringList('favourite', favourite.cast<String>());
-
+  removeToFavourite({required PlanetModel added}) async {
+    favourite.remove(added);
     notifyListeners();
   }
 }
