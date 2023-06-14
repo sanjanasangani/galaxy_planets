@@ -19,8 +19,11 @@ A new Flutter project.
 <img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/8e8f08e6-1366-4bc1-a467-abd2a8958998" width="220px">
 
 <img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/5e8f7fd6-0510-40d9-bac6-583c9f25b8eb" width="220px">
-<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/754f9287-c3ac-417d-b65d-65392c401e3a" width="220px">
-<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/ab59cb52-5951-4c73-920d-5bb89991e60f" width="220px">
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/dd5e4971-22a4-4fc6-89d9-9bc36af554ae" width="220px">
+<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/915cd7f6-0777-4659-9028-b8185efe186f" width="220px">
+
+<img align="left" src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/69e7d2d8-d4f9-40b7-b0b7-0d8653d2f063" width="220px">
+<img src="https://github.com/sanjanasangani/galaxy_planets/assets/131368083/c97cbb73-3a88-47e5-bb3a-05b6d0a6a225" width="220px">
 
 
 ## Getting Started
